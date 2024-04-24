@@ -1,83 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
     <style>
         body {
             background-color: black;
             color: white;
-            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
-            font-size: 40;
+            font-size: 50;
         }
-
         .animation-container {
             text-align: center;
-            opacity: 1;
-            transition: opacity 1s;
         }
-
-        .animate-out {
-            animation: fade 5s;
-        }
-
-        .animate-in {
-            animation: moveArt 2s forwards;
-        }
-      @keyframes fade{
-        0%{
-          opacity: 1;
-        }
-        25%{
-          opacity: .3;
-        }
-        75%{
-          opacity: .3;
-        }
-        100%{
-          opacity: 1;
-        }
-      }
-        @keyframes moveArt {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(50%);
-            }
-        }
-
         a {
+            color: white;
             text-decoration: none;
-            color: inherit;
         }
     </style>
 </head>
 <body>
     <div class="animation-container">
-        <p>Art is redefined</p>
-        <p>Unbound creativity</p>
-        <a href="https://goldstar135.github.io/maad-26210_assignment-5_deng/">A world made of code</a>
+        <p class="haiku">Art is redefined<br>Unbound creativity<br><a href="https://goldstar135.github.io/maad-26210_assignment-5_deng/">A world made of code</a></p>
+        <pre class="code" style="display:none;">art = Object()</pre>
     </div>
-
-    <script>
-        // Add the 'animate-out' class to the container after a delay
-        setTimeout(() => {
-            document.querySelector('.animation-container').classList.add('animate-out');
-        }, 1000);
-
-        // Add the 'animate-in' class to the container after another delay
-        setTimeout(() => {
-            document.querySelector('.animation-container').classList.add('animate-in');
-        }, 2000);
-    </script>
 </body>
 </html>
