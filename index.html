@@ -9,6 +9,7 @@
       height: 100vh;
       margin: 0;
       font-size: 50;
+      font-family: 'Menlo', monospace;
     }
 
     .non-highlightable {
@@ -39,14 +40,14 @@
       overflow: hidden;
       white-space: nowrap;
       border-right: 2px solid transparent;
-      /* Initially transparent */
       width: 0;
-      animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+      
+      animation: typing 1.5s steps(30, end) forwards, blinking 3s;
     }
 
     @keyframes typing {
       from {
-        width: 0
+        width: 0 
       }
 
       to {
@@ -60,7 +61,7 @@
       }
 
       50% {
-        border-right-color: black
+        border-right-color: white
       }
 
       100% {
@@ -75,9 +76,9 @@
     <p class="haiku">
     <div class="typed" style="animation-delay: 0.5s;">Art is redefined</div>
 
-    <div class="typed" style="animation-delay: 3s;">Unbound creativity</div>
+    <div class="typed" style="animation-delay: 3.5s;">Unbound creativity</div>
 
-    <div class="typed" style="animation-delay: 5.5s;">
+    <div class="typed" style="animation-delay: 6.5s;">
       <a href="https://goldstar135.github.io/maad-26210_assignment-5_deng/">A world made of code</a>
     </div>
     </p>
